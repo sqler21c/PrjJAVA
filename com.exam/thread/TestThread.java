@@ -13,13 +13,11 @@ public class TestThread extends Thread{
 
     try{
       Thread.sleep(1000);
-    }catch{InterruptedException e){
+    }catch(InterruptedException e){
       e.printStackTrace();
     }
-
-  }
-
-  public void static main(String[] args) {
+}
+public static Void main(String[] args) {
     for(int i=0; i<10; i++){
       Thread t = new TestThread(i);
       i.start();
