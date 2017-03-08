@@ -9,7 +9,7 @@ public class TestThread extends Thread{
   }
 
   public void run(){
-    System.out.System.out.println(this.seq + " thread start");
+    System.out.println(this.seq + " thread start");
 
     try{
       Thread.sleep(1000);
@@ -20,7 +20,7 @@ public class TestThread extends Thread{
 public static Void main(String[] args) {
     for(int i=0; i<10; i++){
       Thread t = new TestThread(i);
-      i.start();
+      t.start();
     }
     System.out.println("Main ended....  ");
   }
